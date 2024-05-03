@@ -22,7 +22,7 @@ namespace Landis.Library.SiteHarvest
         /// </summary>
         public static void Initialize()
         {
-            Cohorts = Model.Core.GetSiteVar<ISiteCohorts>("Succession.AgeCohorts");
+            Cohorts = Model.Core.GetSiteVar<ISiteCohorts>("Succession.UniversalCohorts");
         }
     }
 }
