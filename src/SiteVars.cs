@@ -1,5 +1,4 @@
 
-using Landis.Core;
 using Landis.Library.UniversalCohorts;
 using Landis.SpatialModeling;
 
@@ -13,7 +12,7 @@ namespace Landis.Library.SiteHarvest
         /// <summary>
         /// The site variable with cohorts (accessed as age-only cohorts).
         /// </summary>
-        public static ISiteVar<ISiteCohorts> Cohorts { get; private set; }
+        public static ISiteVar<SiteCohorts> Cohorts { get; private set; }
 
         //---------------------------------------------------------------------
 
@@ -22,7 +21,7 @@ namespace Landis.Library.SiteHarvest
         /// </summary>
         public static void Initialize()
         {
-            Cohorts = Model.Core.GetSiteVar<ISiteCohorts>("Succession.UniversalCohorts");
+            Cohorts = Model.Core.GetSiteVar<SiteCohorts>("Succession.UniversalCohorts");
         }
     }
 }
